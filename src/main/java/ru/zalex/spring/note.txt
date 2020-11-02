@@ -1,0 +1,21 @@
+https://www.youtube.com/watch?v=BgE5DoIN6Bs&list=PLAma_mKffTOR5o0WNHnY0mTjKxnCgSXrZ&index=15
+
+ Аннотации
+ @Bean
+ @AutoWired
+ @Scope("singleton")                         singleton prototype
+ @Value("${musicPlayer.name}")
+ @PostConstruct
+ @PreDestroy
+ @Component
+ @Autowired
+ @Repository
+ @Qualifier
+ @Configuration
+ @ComponentScan("ru.zalex.spring")
+ @PropertySource("classpath:musicPlayer.properties")
+
+ Конфигурация
+ xml                new ClassPathXmlApplicationContext("applicationContext.xml")
+ xml+аннотации      <context:component-scan base-package="ru.zalex.spring"/>
+ java+аннотации     new AnnotationConfigApplicationContext(SpringConfig.class)
